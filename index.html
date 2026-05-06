@@ -5,58 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        img {
-            width: 200px;
-            height: 200px;
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            color: white;
+            margin-left: 20px;
+        }
+        #first{
+            
+            height: 600px;
+             
+            
             
         }
-        table, th, td {
+        video{
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+            
+        }
+        #box{
+            border: 3px solid orangered;
+            height: 370px;
+            background-color: rgba(29, 14, 14, 0.5);
+            border-image:linear-gradient(to right, yellow, green ,aqua, red)1 ;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+
+
+        }
+        .some{
+            font-size: 19px;
+            position: relative;
+            top: 5px;
+        }
+        img{
+            position: relative;
+            z-index: 1;
+            height: 150px;
+            width: 150px;
+            margin: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h4{
+            color: white;
+            font-size: large;
+            margin-left: 25px;
+        }
+        marquee{
+            width: 30%;
+            color: rgb(188, 75, 75);
+            margin: 5px;
+        }
+        h3, p{
+            color: rgba(241, 241, 7, 0.742);
+        }
+        .r1{
+            margin-left: 100px;
+        }
+        .n1{
+            margin-left: 350px;
+        }
+        h3{
+            margin-left: 20px;
+        }
+        table{
+            border: 1px solid black;
+            margin-left: 30px;
+
+        }
+        th, td{
             border: 1px solid black;
             
+        }
+        .black{
+            color: black;
+        }
+        #left{
+            margin-left: 30px;
+
+        }
+        li{
+            margin-left: 50px;
+        }
+        #one, #two, #three{
+            
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        details{
+            margin: 10px;
+            margin-left: 30px;
+        }
+        #foot{
+            margin: 10px;
+            margin-left: 30px;
+
+        }
+        pre{
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <span><a href = "#about">About</a></span>|
-        <span><a href = "#fes">Features</a></span>|
-        <span><a href = "#specs">Specifications</a></span>|
-        <span><a href = "#gallery">Gallery</a></span>|
-        <span><a href = "#reviews">Reviews</a></span>|
-        <span><a href = "#faq">FAQ</a></span>|
-        <span><a href = "#contact">Contact</a></span>
-    </nav>
-    <h1>EcoBottle</h1>
+    <div id="first">
 
-    <h3>Stay Hydrated,Save the planet</h3>
-    <a href = "ordernow.html">Order Now</a>
-    <marquee behavior="" direction="">EcoBottle now for just $15 - Limited Time Offer🎉</marquee>
-   
-    <section id = "about">
-    <h1>About EcoBottle</h1>
-    <p>Ecobottle is a reusable water bottle designed to reduce plastic waste while keeping your drinks fresh all day.Perfect for travel,work,and fitness</p>
-    </section>
+        <div id="box">
+            
+            <pre>   <a href="#about">About</a> | <a href="#features">Features</a> | <a href="#specifications">Specifications</a> | <a href="#gallery">Gallery</a> | <a href="#reviews">Reviews</a> | <a href="#faq">FAQ</a> | <a href="#contact">Contact</a></pre>
+            <br>
+            <h1>EcoBottle</h1>
+            <br>
+            <h4>Stay Hydrated, Save the Planet</h4>
+            <marquee>Big Summer Sale! Get your EcoBottle now for just $15 - Limited Time Offer! </marquee>
 
-    <section id = "fes">
-    <h1> Key Features</h1>
+            
+            
+            <h4 class="some" id="gallery">Gallery</h4>
+
+            <img src="Assets\1.png" alt="">
+            <img src="Assets\2.png" alt="">
+            <img src="Assets\3.png" alt="">
+            <img src="Assets\4.png" alt="">
+            <img src="Assets\5.png" alt="">
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <h3 id="reviews">Costumer Reviews</h3>
+            <br>
+            <p class="r1">"Best Water Bottle ive ever owned!"</p>
+            <p class="n1">-Sarah</p>
+            <br>
+            <p class="r1">"Keeps my drinks cold for hours."</p>
+            <p class="n1"> - James</p>
+
+        </div>
+        <video loop="" autoplay="" muted>
+            <source src="Assets\vid.mp4" type="video/mp4">
+        </video>
+    </div> <br>
+
+    <br><br><br><br><br>
+
+
+    <div>
+        
+        <h1 class="black" id="about">About EcoBottle</h1>
+    <br>
+    <p class="black" id="left">The EcoBottle is a reusable water bottle designed to reduce plastic waste while keeping your drinks fresh all day. Perfect for Travel, Work and fitness.
+    </p>
+    <br>
+    <h1 class="black" id="features">Key Features</h1>
+    <br>
     <ul>
         <li>BPA-free stainless steel</li>
         <li>Leak-proof design</li>
         <li>750ml capacity</li>
         <li>Available in multiple colors</li>
     </ul>
-    </section>
-
-    <section id = "specs">
-    <h1>Specifications</h1>
-    <table style = "border:2px solid black;">
+    <br>
+    <h1 class="black" id="specifications">Specifications</h1>
+    <br>
+    <table>
         <tr>
-            <th>Price</th>
+            <th> Price</th>
             <td>$15</td>
         </tr>
         <tr>
             <th>Material</th>
-            <td>Stainless steel</td>
+            <td>Stainless Steel</td>
         </tr>
         <tr>
             <th>Size</th>
@@ -67,59 +205,37 @@
             <td>1 Year</td>
         </tr>
     </table>
-    </section>
+    <br>
+    <br>
+    <h1 class="black"> Watch Our Product In Action</h1>
+    <br>
+    <p id="one" class="black">Discover how EcoBottle keeps your drinks fresh and helps save the planet!</p>
+    <p id="two" class="black"> your browser does not support the video tag.</p>
+    <p id="three" class="black"><b>Tagline:</b> "EcoBottle - Hydration Meets Sustainability"</p>
+    <br>
+    <h1 class="black" id="faq"> Frequently Asked Questions</h1>
+    <details>
+        <summary>Is the EcoBottle diswasher safe?</summary>
+        
+    </details>
+    <details><summary>Does it keep drinks hot?</summary>
 
-    <section id = "gallery">
-    <h1>Gallery</h1>
-    <img src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="EcoBottle">
-    <img src = "https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg" alt="EcoBottle">
-    <img src = "https://i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg" alt="EcoBottle">
-    <img src = "https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg" alt="EcoBottle">
-    <img src = "https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg" alt="EcoBottle">
-
+    </div>
+    <br>
     
+        <h1 class="black" id="contact">Contact Us</h1>
+    <div id="foot">
+    <p class="black">Name:</p>
+    <input type="text">
+    <br><br><p class="black">Email:</p>
+    <input type="email">
+    <br><br>
+    <p class="black">Message:</p>
+    <input type="textarea">
+    <br><br>
+    <button type="submit">Submit</button>
+    <br><br>
+    <p class="black">Contact: support@ecobottle.com</p>
+    </div>
 
-
-    <h1>Watch our product in Action</h1>
-    <p> 🎥discover how ecobottle keeps your drinks fresh and helps save the planet!</p>
-    <video width="900" height="500" controls>
-  <source src="https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4" type="video/mp4">
-</video>
-    <p><strong>Tagline:</strong> "EcoBottle - Hydration Meets Sustainability"</p>
-
-    </section>
-
-    <section id = "reviews">
-    <h1>Customer Reviews</h1>
-
-    <p> <pre>                "Best water bottle I've ever owned!"</pre>    </p>
-
-    <p> -  Sarah</p>
-    <p>  <pre>                     "Keep my drinks cold for hours!" </pre>  </p>
-    <p> - James </p> 
-    </section>
-
-
-    <section id = "faq">
-    <h1>Frequently Asked Questions</h1>
-
-    <p>&#9654; How do I clean the EcoBottle?</p>
-    <p>&#9654; What is the warranty period?</p>
-    <p>&#9654; Is the EcoBottle leak-proof?</p>
-
-    </section>
-
-    <section id = "contact">
-
-    <h1>Contact Us</h1>
-    Name:<br> <input type = "text"><br><br>
-    Email:<br> <input type = "email"><br><br>
-    Message:<br> <textarea></textarea><br><br>
-    <button  type = "submit">Submit</button>
-
-    </section>
-
-    <p>Contact:support@ecobottle.com</p>
-    <p>&copy; 2026 Ecobottle Inc.| All rights reserved.</p>
 </body>
-</html>
